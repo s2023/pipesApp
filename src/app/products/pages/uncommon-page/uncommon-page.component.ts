@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { interval, Observable, tap } from 'rxjs';
 
 @Component({
-  selector: 'app-uncommon-page',
+  selector: 'products-uncommon-page',
   templateUrl: './uncommon-page.component.html',
   styleUrls: ['./uncommon-page.component.css']
 })
@@ -50,7 +50,7 @@ export class UncommonPageComponent {
       resolve( 'Tenemos data en la promesa.' );
       console.log( 'Tenemos data en la promesa.' );
       this.person.name = 'Otro nombre'
-    }, 3500);
+    }, 5000);
   })
 
 }
