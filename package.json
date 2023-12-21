@@ -7,7 +7,7 @@
     "build": "ng build",
     "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist",
     "build:href": "ng build --base-href ./",
-    "copy:dist": "copyfiles dist/pipes-app/** ./docs",
+    "copy:dist": "copyfiles dist/pipes-app/** ./docs -f --exclude dist/pipes-app/browser/media/** && copyfiles dist/pipes-app/browser/media/** ./docs/media -f" ,
     "delete:docs": "del docs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
